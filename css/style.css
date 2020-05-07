@@ -64,6 +64,13 @@ p {
     background-color: rgb(0, 89, 255);
 }
 
+.main-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
 
 /* 
  *  content is on every page and holds 
@@ -73,7 +80,7 @@ p {
 #content {
     float: none;
     border-radius: 16px;
-    background-image: linear-gradient(to bottom, black, rgba(128, 128, 128, 0));
+    background-image: linear-gradient(to bottom, black 15%, rgb(59, 59, 59) 50%, rgba(128, 128, 128, 0));
     opacity: 0.9;
     margin: 100px 75px 25px;
     padding: 100px 25px 150px;
@@ -92,9 +99,11 @@ p {
  *  button. 
  */
 
-@media screen and (max-width: 1200px) {}
-
-@media screen and (max-width: 1200px) {}
+@media screen and (max-width: 991px) {
+    #content {
+        margin: 150px 15px 15px;
+    }
+}
 
 
 /*  
